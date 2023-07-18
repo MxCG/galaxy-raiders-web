@@ -1,11 +1,12 @@
 <template>
 	<template v-if="state == 'menu'">
-		<h3>Galaxy Raiders</h3>
+		<h1>Galaxy Raiders</h1>
 		<button @click="state = 'game'">Jogar</button>
 		<button @click="state = 'leaderboard'">Placar</button>
 		<button @click="close()">Fechar</button>
 	</template>
 	<template v-if="state == 'leaderboard'">
+		<h3>Placar</h3>
 		<Leaderboard />
 		<button @click="state = 'menu'">Back to menu</button>
 	</template>
